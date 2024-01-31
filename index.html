@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+       body{
+        margin: 0;
+        color: #fff;
+        display: flex;
+        text-align: center;
+        justify-content: flex-start;
+        background-color: #fff; 
+        min-height: 100%;
+        
+       }
+        header {
+        background-color: #ffffff;
+        color: #1a0606;
+        padding: 1em;
+        padding-right: 1em;
+        position: fixed;
+        width: 98%;
+        text-align: right;
+        z-index: 1000;
+        font-weight: bold;
+        font-size: 25px;
+        margin-left: 0px;
+        margin-right: 10px;
+        }
+
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: flex-end;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #130202;
+            padding: 1em;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #2f92cf;
+        }
+        nav .logo {
+            margin-right: auto; /* Moved to the leftmost position */
+        }
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            text-align: left;
+            position: relative;
+            margin-top: 50px;            
+        }
+
+        .profile {
+            text-align: left;
+            margin:150px 0px 450px 0px;
+            font-size: 20px
+        }
+
+        #right {
+            border-radius: 50%;
+            max-width: 500px;
+            clip-path: circle(50%);
+            order: 2;
+            object-fit: cover;
+        }
+        #left{
+            margin: 50px 0px 0px 0px;
+            width: 100%;
+        }
+
+        .profile h1,h2,p{
+            margin-top: 0.8em;
+            color: #053448;
+            order: 1;
+            margin-left:100px;
+            
+        }
+
+        .contact-btn {
+            display: inline-block;
+            background-color: #4a90e2;
+            color: #fff;
+            padding: 0.5em 1em;
+            text-decoration: none;
+            border: 1px solid #fff;
+            border-radius: 5px;
+            margin-top: 0.5em;
+            transition: background-color 0.3s ease;
+            margin-left: 200px;
+            margin-bottom: 150px;
+        }
+
+        .contact-btn:hover {
+            transform: scale(1.2); /* Adjust the scale factor for zoom effect */
+             transition: transform 0.3s ease;
+        }
+
+        /* Media queries for responsiveness */
+        @media (min-width: 768px) {
+        .container {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        #left {
+            margin-right: auto; /* Pushes the "left" div to the left */
+        }
+
+        #right {
+            margin-left: auto; /* Pushes the "right" div to the right */
+        }
+
+        .profile {
+            text-align: left;
+            margin-right: 2em; /* Adjusted margin for better spacing */
+            margin-bottom: 0;
+        }
+        }
+
+        .suju{
+            background: linear-gradient(to bottom, #3498db, #1e3c72);
+        }
+    </style>
+    <title>Your Portfolio</title>
+</head>
+<body>
+    <div class="suju">
+    <header>
+        <nav>
+            <ul>
+                <li class="logo"><a href="#href">Sujal Dawande</a></li>
+                
+                <li><a href="about.html">About</a></li>
+                <li><a href="skill.html">Skills</a></li>
+                <li><a href="project.html">Project</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+        <div class="profile" id="left">
+            <h1 >Hi</h1>
+            <h1 >I am Sujal Dawande</h1>
+            <h2 >A Web Designer</h2>
+            <p>"I'm a skilled front-end developer specializing in HTML, CSS, and JavaScript. Dedicated to creating visually appealing, user-friendly interfaces for seamless web experiences. Passionate about blending design and technology for optimal user engagement."</p>
+            <a href="contact.html" class="contact-btn">Contact</a>
+        </div>
+            <div class="profile" id="right" style="margin:150px 100px 0px 725px;  clip-path: xywh(0 5px 100% 75% round 15% 0);">
+                <img src="Sujalphoto.jpg" alt="Your Name">
+          </div>
+    </main>
+</div>
+</body>
+</html>

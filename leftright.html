@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body, html {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      display: flex;
+      height: 100vh;
+    }
+
+    .half {
+      flex: 1;
+      padding: 20px;
+    }
+
+    #leftContent {
+      background-color: #f0f0f0; /* Change the background color as needed */
+    }
+
+    #rightContent {
+      background-color: #e0e0e0; /* Change the background color as needed */
+    }
+  </style>
+  <title>Full Page Layout</title>
+</head>
+<body>
+
+  <div class="container">
+    <div class="half" id="leftContent">
+      <h2>Left Content</h2>
+      <p>This is the left half of the page.</p>
+      <!-- Add your left content here -->
+    </div>
+    
+    <div class="half" id="rightContent">
+      <h2>Right Content</h2>
+      <p>This is the right half of the page.</p>
+      <!-- Add your right content here -->
+    </div>
+  </div>
+
+</body>
+</html>
